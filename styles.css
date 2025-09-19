@@ -83,6 +83,34 @@ body {
     color: var(--gray-800);
     background: linear-gradient(135deg, #99f6e4 0%, #93c5fd 50%, #bfdbfe 100%);
     min-height: 100vh;
+    padding-top: 40px; /* Account for demo notice bar */
+}
+
+/* Demo Notice Bar */
+.demo-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #92400e;
+    z-index: 1001;
+    padding: var(--spacing-2) 0;
+    text-align: center;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.demo-notice-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+}
+
+.demo-notice i {
+    font-size: var(--font-size-base);
 }
 
 /* Utility Classes */
@@ -156,7 +184,7 @@ body {
 /* Navigation */
 .navbar {
     position: fixed;
-    top: 0;
+    top: 30px; /* Position below demo notice bar */
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.95);
@@ -1000,27 +1028,27 @@ body {
     background: var(--gray-400);
 }
 
-/* Platform-specific preview styles - Soft colors */
+/* Platform-specific preview styles - No vertical bars */
 .pinterest-style {
-    border-left: 4px solid #ef4444;
+    /* Removed vertical bar */
 }
 
 .facebook-style {
-    border-left: 4px solid #3b82f6;
+    /* Removed vertical bar */
 }
 
 .instagram-style {
-    border-left: 4px solid #ec4899;
+    /* Removed vertical bar */
 }
 
 .etsy-style {
-    border-left: 4px solid #f59e0b;
+    /* Removed vertical bar */
 }
 
 .blogger-style {
-    border-left: 4px solid #fb923c;
+    /* Removed vertical bar */
 }
 
 .youtube-style {
-    border-left: 4px solid #ef4444;
+    /* Removed vertical bar */
 }

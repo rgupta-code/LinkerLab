@@ -339,13 +339,8 @@ class LinkerLab {
     }
 
     applyPlatformStyling(platform) {
-        const previewCard = document.getElementById('previewCard');
-        
-        // Remove existing platform classes
-        previewCard.classList.remove('pinterest-style', 'facebook-style', 'instagram-style', 'etsy-style', 'blogger-style', 'youtube-style');
-        
-        // Add platform-specific styling
-        previewCard.classList.add(`${platform}-style`);
+        // Platform styling removed - no visual indicators needed
+        // Platform identification is handled through tabs only
     }
 
     initializeAIFeatures() {
